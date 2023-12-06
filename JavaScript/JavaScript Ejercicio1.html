@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        table,  tr, td{
+            border: 3px solid black;
+            border-collapse: collapse;  
+            height: 5vw;
+        }
+        .botones{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 10%;
+            
+        }
+        .botones button{
+           font-size: 2em;
+        }
+
+    </style>
+
+    <script src="JavaScript Ejercicio1.js"></script>
+
+</head>
+
+<body>
+   <table id="tabla">
+    <tr id ="fila1">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr id="fila2">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr id="fila3">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+   </table> 
+
+    <div class="botones">
+        <button type="button" value="Green" onclick="cambiarColorTabla('green')">Green</button>
+        <button type="button" value="Blue" onclick="cambiarColorTabla('blue')">Blue</button>
+        <button type="button" value="Red" onclick="cambiarColorTabla('red')">Red</button>
+        <button type="button" value="fila1" onclick="cambiarColorFila1('red')">Fila 1</button>
+        <button type="button" value="Blue" onclick="cambiarColorFila2('yellow')">Fila 2</button>
+        <button type="button" value="Red" onclick="cambiarColorFila3('red')">Fila 3</button>
+        <button type="button" value="Reset" onclick="reset()">Reset</button>
+    </div>
+</body>
+
+</html>

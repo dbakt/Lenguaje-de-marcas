@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intento de calculadora</title>
+    <script src="calculadora.js"></script>
+    <style>
+        body{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            height: 600px;
+          }
+        .contenido{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+            align-items: center;    
+        }
+        .pantalla{
+            border: 5px solid;
+            width: 30%;
+            height: 10vw;
+            margin-bottom: 5%;
+            background-color: black;
+            position: relative;
+            min-width: 400px;
+            min-height: 200px;
+        }
+        h1{
+            position: absolute;
+            left: 75%;
+            top: 40%;
+            color: rgb(0, 176, 0);
+            font-size: 3rem;
+        }
+        form{
+            border: 5px solid;
+            padding: 5%;
+            background-color: rgba(128, 128, 128, 0.099);
+            width: fit-content;
+        }
+        .numeros{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15%;
+            margin-left: 20%;
+        }
+        .numeros .numero1{
+            margin-bottom: 10%;
+        }
+        form .numeros .numero1 input,
+        form .numeros .numero2 input{
+            font-size: 1.2rem;
+        }
+        .botones{
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 0%;
+        }
+        form .botones .sumar input,
+        form .botones .restar input,
+        form .botones .multiplicar input,
+        form .botones .dividir input{
+            font-size: 1.2rem;
+            background-color: rgb(42, 165, 155);
+            border-radius: 10px;
+            color: rgb(0, 20, 109);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenido">
+        <div class="pantalla">
+            <h1 id="resultado"></h1>
+        </div>
+        
+        <form action="">
+            <div class="numeros">
+                <div class="numero1">
+                     <label for="numero1" style="font-size: 1.5rem;">Numero1:</label><br>
+                    <input type="number" name="numero1" id="numero1">
+                </div>
+
+                <div class="numero2">
+                    <label for="numero2" style="font-size: 1.5rem;">Numero2:</label><br>
+                    <input type="number" name="numero2" id="numero2">
+                </div>
+            </div>
+
+            <div class="botones">
+                 <div class="sumar">
+                    <input type="button" value="Sumar" onclick="sumar()">
+                </div>
+
+                <div class="restar">
+                    <input type="button" value="Restar" onclick="restar()">
+                </div>
+
+                <div class="multiplicar">
+                    <input type="button" value="Multiplicar" onclick="multiplicar()">
+                </div>
+
+                <div class="dividir">
+                    <input type="button" value="Dividir" onclick="dividir()">
+                </div>
+            </div>
+               
+        </form>
+
+    </div>
+</body>
+
+</html>

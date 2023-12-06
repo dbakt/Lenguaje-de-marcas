@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circunferencia</title>
+    <script src="circunferencia.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contenido{
+            display: flex;
+            margin: 10% 5%;
+            position: relative;
+        }
+        .solicitud{
+            border-style: groove;
+            border-radius: 20px;
+            padding: 0 3%;
+            width: fit-content;
+            background-color: rgb(46, 134, 134);
+            color: white;
+            
+        }
+        .contenido .solicitud,
+        .contenido .acceso button,
+        .contenido .resultado{
+            font-size: 1.5rem;
+        }
+        .contenido .acceso{
+            display: flex;
+            margin-left: 10%;
+        }
+        .contenido .acceso button{
+            margin-left: 2%;
+            height: fit-content;
+            align-self: center;
+            width: 10%;
+            background-color: rgb(255, 136, 0);
+            color: yellow;
+            border-radius: 60%;
+        }
+    
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+            width: fit-content;
+            color: rgb(1, 74, 74);
+            font-size: 10rem;
+            margin-left: 3%;
+           
+        }
+        .resultado{
+            margin-left: 5%;
+            border-style: groove;
+            border-radius: 20px;
+            padding: 0 3%;
+            width: fit-content;
+            background-color: rgb(46, 134, 134);
+            color: white; 
+        }
+       .contenido .resultado p{
+        font-size: 2rem;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="contenido">
+        <div class="solicitud">
+            <h2 class="requerimiento">¿Qué radio tiene tu circunferencia?</h2>
+        
+            <div class="acceso">
+                <p>Pulsa aquí para introducir el valor: </p>
+                <button class="boton" onclick="area_perim()" >!!</button>
+            </div>
+        
+        </div>
+
+        <div class="material-symbols-outlined">
+                arrow_right_alt
+        </div>
+    
+        <div class="resultado">
+          <h3 id="area_perim"></h3>
+         
+        </div>
+    </div>
+</body>
+
+</html>

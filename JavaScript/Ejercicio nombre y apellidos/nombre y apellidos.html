@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre y apellidos</title>
+    <script src="nombre y apellidos.js"></script>
+    <style>
+        .contenido{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .nombre{
+            margin-bottom: 10px;
+        }
+        .nombre label{
+            margin-right: 8px;
+        }
+        .boton{
+            display: flex;
+            justify-content: center;
+         }
+        .boton input{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenido">
+    <div class="titulo">
+        <h2 id="titulo"></h2>
+    </div>
+    
+    <div class="formulario">
+        <form action="">
+            <div class="nombre">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" value="Daniel">
+            </div>
+
+            <div class="apellidos">
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidos" id="apellidos" value="Barbero Alarcón">
+            </div>
+
+            <div class="boton">
+                <input type="button" value="Saluda" onclick="mostrar()">
+            </div>
+        </form>
+    </div>
+    </div>
+
+</body>
+
+</html>

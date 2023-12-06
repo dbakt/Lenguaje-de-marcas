@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor</title>
+    <script src="Mayor.js"></script>
+    <style>
+        body{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        .contenido{
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 3% 18% 0% 18%;
+            background-color: rgb(209, 243, 255);
+            border-radius: 100%;
+            padding: 8%;
+            border: 7px solid rgba(30, 79, 95, 0.56);
+            box-shadow: 0 0 3px 4px rgb(128, 128, 128, 0.3), 0 0 3px 5px rgba(87, 87, 87, 0.2), 0 0 3px 6px rgba(46, 46, 46, 0.1), 0 0 3px 7px rgba(0, 0, 0, 0.571);
+        }
+        .contenido h2{
+            margin-bottom: 5%;
+            color: rgba(11, 11, 117, 0.846);
+            font-style: italic;
+            font-weight: 800;
+        }
+        .contenido button{
+            font-size: 1.2rem;
+            padding: 1.5%;
+            border-radius: 50px;
+            background-color: rgba(43, 107, 226, 0.47);
+            border-color: rgba(43, 113, 226, 0.733);
+            color: rgb(9, 24, 47);
+            margin-top: 10%;
+        }
+        .contenido p{
+            font-size: 1.35rem;
+            background-color: rgba(4, 4, 4, 0.415);
+            border: 3px solid rgba(30, 79, 95, 0.742);
+            padding: 10% 0%;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenido">
+        <h2>¿Cuál de los dos números introducidos será mayor?</h2>
+        <p id="mayor"></p>
+        <button onclick="mayor()">Click para saber</button>
+    </div>
+</body>
+</html>
