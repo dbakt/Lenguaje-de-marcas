@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cartas{
+    display: flex;
+    width: 100%; /*dependiendo de si las tarjetas tienen espacio suficiente para separarse, lo dejaremos así o lo aumentaremos*/
+    padding: 50px;
+}
+
+.cartas .carta{
+    background-color: rgb(0, 149, 255);
+    color: white;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;/*nos ahorrará un problema de layout ya que unas van a estar encima de las otras*/
+    display: flex;
+    flex-direction: column;/*para ordenar los elementos internos*/
+    transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgb(0, 0, 0, 0.3), -4px 0 10px rgb(0, 0, 0, 0.2), -5px 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.cartas .carta a{
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cartas .carta a:hover{
+    color: rgb(238, 157, 71);
+}
+
+.cartas .carta .header{
+    flex: 1; /*se utiliza en elementos que intervengan en un flex. Indica la cantidad de espacio que ocupa. En este caso, as ser 1, ocupa todo el espacio que tenga disponible*/
+}
+
+.cartas .carta:hover{
+    margin-right: 80px; /*para que desplace al resto de tarjetas*/
+    transform: rotate(3deg) translateY(-15px);
+}
+
+.cartas .carta .header .fecha{
+    padding: 10px 0;
+}
+
+.cartas .carta .header .titulo{
+    font-size: 2em;
+}
+
+.cartas .carta[class*="numero"]{
+    margin-left: -8%;
+}
+
