@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frase</title>
+    <script src="frase.js"></script>
+</head>
+
+<body>
+    <div class="contenido">
+        <div class="inputs">
+            <label for="frase">Introduce una frase: </label><br>
+            <input type="text" name="frase" id="frase">
+            <label for="numero">Cuanto más grande, más pequeño será la frase</label> <br>
+            <input type="number" name="numero" id="numero" placeholder="Número del 1 al 6" pattern="[1]{1-6}"
+            max="6" min="1">
+        </div>
+
+        <div class="boton">
+            <button class="click" onclick="frase()">Dale</button>
+        </div>
+
+        <div class="nuevaFrase">
+            <p id="nuevaFrase"></p>
+        </div>
+    </div>
+</body>
+</html>
