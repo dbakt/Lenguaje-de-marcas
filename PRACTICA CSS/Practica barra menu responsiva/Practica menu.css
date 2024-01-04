@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.collapsed{
+    display: none;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+nav .movil{
+  display: none;
+}
+
+nav .movil .header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+}
+
+nav .movil .header .more button{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+ }
+
+nav .logo{
+    min-width: 250px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+}
+
+nav a:hover{
+    color: black;
+    background-color: #00c3ff;
+}
+
+nav .escritorio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .escritorio .primarios,
+nav .escritorio .secundarios{
+    display: flex;
+}
+
+nav .escritorio .secundarios.mini{
+    display: none;
+}
+
+@media screen and (max-width: 895px){
+    nav .logo{
+        min-width: 100px;
+    }
+
+    nav .secundarios.full{
+        display: none;
+    }
+
+    nav .secundarios.mini{
+        display: block !important;
+    }
+
+    nav .secundarios.mini .submenu{
+        background-color: black;
+        position: absolute;
+        display: none;
+        width: 200px;
+        right: 0;
+    }
+
+    nav .secundarios.mini:hover .submenu{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav .escritorio{
+        display: none;
+    }
+    
+    nav .movil{
+        display: block;
+    }
+}
